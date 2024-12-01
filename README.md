@@ -1,2 +1,2 @@
 #BitWise JAVA
-## Library contaiing bit operation utilities written in java
+## Library containg bit operation utilities written in java
