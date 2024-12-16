@@ -133,7 +133,39 @@ public class BitwiseTest {
          , a , firstSetPos));
     }
 
+    @Test
+    void multiply(){
+       int a = 5;
+       int b = 70;
+       int aMulB = BitwiseHelper.multiply(a,b);
+       logger.info(String.format("%s * %s = %s",a,b,aMulB ));
+    }
 
+    @Test
+    void divide(){
+        int a = 55;
+        int b = 5;
+        int aDivB = BitwiseHelper.divide(a,b);
+        logger.info(String.format("%s / %s = %s",a,b,aDivB ));
+    }
 
+    @Test
+    void isPalindrome(){
+        int a = 52525;
+        boolean isPalin = BitwiseHelper.isPalindrome(a);
+        logger.info(String.format(
+                "%s is %s palindrome" , a , isPalin ? "a" : "not a"
+        ));
+    }
 
+    @Test
+    void uniformRandom(){
+        int a = 1;
+        int b = 10;
+        for (int i = 0; i < 5; i++) {
+            logger.info(String.format(
+                    "Random integer between %s and %s is %s" , a,b,BitwiseHelper.uniformRandom(a,b)
+            ));
+        }
+    }
 }
